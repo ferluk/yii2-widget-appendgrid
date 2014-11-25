@@ -1,0 +1,25 @@
+{
+	"name": "ferrika/yii2-widget-appendgrid",
+	"description": "jquery appendgrid using https://appendgrid.apphb.com/",
+	"keywords": ["yii2", "extension", "widget", "appendgrid"],
+	"type": "yii2-extension",
+	"license": "BSD-3-Clause",
+	"support": {
+		"issues": "https://github.com/ferrika/yii2-widget-appendgrid/issues",
+		"wiki": "https://github.com/ferrika/yii2-widget-appendgrid/wiki/",
+		"source": "https://github.com/ferrika/yii2-widget-appendgrid"
+	},
+	"authors": [
+		{
+			"name": "ferry lukito",
+			"email": "ferrylukito2003@yahoo.com"
+		}
+	],
+	"require": {
+		"yiisoft/yii2": "*",
+		"yiisoft/yii2-jui": "*"
+	},
+	"autoload": {
+		"psr-4": { "ferrika\\appendgrid\\": "" }
+	}
+}
