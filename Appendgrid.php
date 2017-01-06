@@ -54,7 +54,11 @@ class Appendgrid extends \yii\base\Widget {
      * @var array 
      */
     public $options = ['class' => 'grid-view'];
-    
+
+    public $afterRowInserted = null;
+    public $afterRowAppended = null;
+    public $dataLoaded = null;
+    public $rowDataLoaded = null;
     /**
      * appendGrid Column Formats
      */
@@ -122,6 +126,10 @@ class Appendgrid extends \yii\base\Widget {
             'idPrefix' => $this->idPrefix,
             'initRows' => $this->initRows,
             'columns' => $this->columns,
+            'afterRowInserted' => $this->afterRowInserted,
+            'afterRowAppended' => $this->afterRowAppended,
+            'dataLoaded' => $this->dataLoaded,
+            'rowDataLoaded' => $this->rowDataLoaded,
             'initData' => $this->initData(),
             'nameFormatter' => new \yii\web\JsExpression(
                 "function (idPrefix, name, uniqueIndex) {
